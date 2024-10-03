@@ -1,0 +1,34 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    
+
+}
+section{
+    border: ridge 20px;
+    border-image-source: linear-gradient(90deg, red 50%, cyan 50%);
+    border-image-source: url(./packs\ of\ cherries.jpeg);
+    border-image-repeat: space;
+    border-image-width: 15px;
+    border-image-slice: 50;
+    border-image-outset: 0px;
+    font-size: 50px;
+    text-align: center;
+    font-family: helvetica;
+    /* border: ridge 5px; */
+}
+section:nth-of-type(5){
+    grid-area: 1/1/3/4;
+    
+}
+section:nth-of-type(1){
+    grid-area: 3/1/4/3;
+  
+}
+section:nth-of-type(4){
+    grid-area: 3/3/5/4;
+}
+section:nth-of-type(2){
+    grid-area: 6/1/7/4;
+}
